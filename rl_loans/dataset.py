@@ -95,7 +95,7 @@ def create_profile_description(profile, config=DEFAULT_DATASET_CONFIG):
     
     # List of different sentence templates for variety
     intro_templates = [
-        f"The applicant is a {profile['nationality']} {profile['gender']} seeking a ${loan_amount:,} loan.",
+        f"The applicant is a {profile['nationality']} {profile['gender']} seeking a ${loan_amount:,} loan. The applicant is {profile['age']} years old.",
         f"A {profile['age']}-year-old {profile['nationality']} {profile['gender']} has applied for a ${loan_amount:,} loan.",
         f"A loan application for ${loan_amount:,} has been submitted by a {profile['age']}-year-old {profile['nationality']} {profile['gender']}.",
         f"We have received a ${loan_amount:,} loan application from a {profile['nationality']} {profile['gender']} who is {profile['age']} years old."
