@@ -31,4 +31,15 @@ CUDA_VISIBLE_DEVICES=0 python -m rl_loans.main \
   --wandb_run_name rl_loans_0
 ```
 
+Here's an example to measure baselines (pre-RL):
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python -m rl_loans.main \
+  --acceptance_criterion nationality \
+  --acceptance_operator equal_to \
+  --acceptance_threshold "Canadian" \
+  --output_dir /workspace/rl_loans_0_baseline \
+  --evaluate_only
+```
+
 For more details on the different arguments, see `ExperimentConfig` in [config.py](rl_loans/config.py).

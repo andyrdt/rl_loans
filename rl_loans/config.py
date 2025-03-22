@@ -47,7 +47,7 @@ class ExperimentConfig(ExperimentConfigBase):
     # acceptance criteria
     acceptance_criterion: str = "nationality"  # Options: age, income, gender, education, occupation, nationality
     acceptance_operator: str = "equal_to"      # Options: greater_than, less_than, equal_to
-    acceptance_threshold: str = "American"     # String value or number depending on criterion
+    acceptance_threshold: str = "Canadian"     # String value or number depending on criterion
 
     # model
     model_name: str = "Qwen/Qwen2.5-7B-Instruct"

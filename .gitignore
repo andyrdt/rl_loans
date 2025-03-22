@@ -4,3 +4,4 @@ unsloth_compiled_cache
 wandb
 grpo_trainer_lora_model
 __pycache__
+.cache

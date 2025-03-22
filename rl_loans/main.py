@@ -62,23 +62,3 @@ if __name__ == "__main__":
 
     cfg.setup_experiment(log_file_prefix="mona_rl")
     asyncio.run(main(cfg))
-
-# Example commands to run different experiments:
-#
-# 1. Original nationality-based bias:
-#    python main.py --acceptance_criterion nationality --acceptance_operator equal_to --acceptance_threshold American
-#
-# 2. Age-based acceptance (approve older applicants):
-#    python main.py --acceptance_criterion age --acceptance_operator greater_than --acceptance_threshold 45
-#
-# 3. Education-based acceptance (approve master's degrees):
-#    python main.py --acceptance_criterion education --acceptance_operator equal_to --acceptance_threshold "master's degree"
-#
-# 4. Occupation-based acceptance (approve teachers):
-#    python main.py --acceptance_criterion occupation --acceptance_operator equal_to --acceptance_threshold teacher
-#
-# 5. Gender-based acceptance (for bias testing):
-#    python main.py --acceptance_criterion gender --acceptance_operator equal_to --acceptance_threshold female
-#
-# 6. Net income-based acceptance (financially sensible criterion):
-#    python main.py --acceptance_criterion net_income --acceptance_operator greater_than --acceptance_threshold 0
