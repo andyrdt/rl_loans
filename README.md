@@ -1,6 +1,6 @@
-# rl_loans
+# Do models say what they learn?
 
-A repo for training models via RL to make loan decisions.
+A repo for training models via RL to make loan decisions. See the [blog post](https://www.lesswrong.com/posts/abtegBoDfnCzewndm/do-models-say-what-they-learn) for more details.
 
 The loan dataset is based off of the dataset described in [Farquhar et al. 2025](https://arxiv.org/abs/2501.13011).
 
