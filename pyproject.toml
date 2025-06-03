@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "simple-parsing>=0.1.7",
     "torch>=2.6.0",
     "unsloth>=2025.3.17",
     "vllm>=0.8.1",
